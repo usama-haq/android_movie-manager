@@ -107,18 +107,20 @@ public class MainActivity extends AppCompatActivity
 
     private void showFragment(Class fragmentClass) {
 
+        Fragment fragment = null;
 
         try {
-            Fragment fragment = (Fragment) fragmentClass.newInstance();
-
-            FragmentManager fragmentManager = this.getSupportFragmentManager();
-            fragmentManager.beginTransaction()
-                    .replace(R.id.flContent, fragment)
-                    .commit();
+            fragment = (Fragment) fragmentClass.newInstance();
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
+
+        FragmentManager fragmentManager = this.getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.flContent, fragment)
+                .commit();
     }
+
 }
