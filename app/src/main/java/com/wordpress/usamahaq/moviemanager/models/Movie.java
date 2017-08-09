@@ -67,7 +67,7 @@ public class Movie {
     }
 
     public String getPosterPath() {
-        return posterPath;
+        return String.format("https://image.tmdb.org/t/p/w342%s", posterPath);
     }
 
     public void setPosterPath(String posterPath) {
