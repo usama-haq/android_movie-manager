@@ -43,7 +43,7 @@
             android:layout_marginRight="@dimen/activity_small_margin"
             android:layout_toEndOf="@id/ivMovieImage"
             android:layout_toRightOf="@id/ivMovieImage"
-            android:maxLength="20"
+            android:maxLength="190"
             android:text="Captain America Overview" />
     </RelativeLayout>
 
