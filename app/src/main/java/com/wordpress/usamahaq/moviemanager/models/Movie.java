@@ -1,10 +1,12 @@
 package com.wordpress.usamahaq.moviemanager.models;
 
+import java.io.Serializable;
+
 /**
  * Created by usama on 8/10/2017.
  */
 
-public class Movie {
+public class Movie implements Serializable {
 
 
     String id;
